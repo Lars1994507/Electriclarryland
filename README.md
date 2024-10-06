@@ -104,3 +104,21 @@ Questions That Didn't Work
 **Response**:
 >[]
 >I'm sorry, but without knowing the specific institution or museum you are referring to, I cannot provide the information about Italian Renaissance artifacts currently on display in the Main Gallery. If you can provide the name of the museum or gallery, I might be able to offer a more helpful answer.
+
+
+### Question 7: Cross-Domain Question
+**Query**: Which exhibitions currently feature artifacts that have been moved from storage within the last year?
+
+    SELECT DISTINCT e.exhibition_id, e.title
+    FROM exhibition e
+    JOIN exhibition_artifact ea ON e.exhibition_id = ea.exhibition_id
+    JOIN artifact_location al ON ea.artifact_id = al.artifact_id
+    WHERE al.move_date >= DATE('now', '-1 year')
+      AND al.from_location = 'storage';
+
+
+
+**Response**:
+>[]
+>I'm unable to provide real-time or the most current updates on exhibitions and the movement of artifacts. I recommend checking the latest information directly from museum websites or contacting them for the most recent exhibition details.
+
