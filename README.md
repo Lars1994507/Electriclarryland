@@ -1,7 +1,9 @@
 Description:
 ---------------------
 The database represents a dataset for managing a museum's collections, exhibitions, and curator activities.
-![Diagram](Screenshot 2024-10-05 212115.png)
+
+
+![Diagram](https://github.com/Lars1994507/Electriclarryland/blob/main/Screenshot%202024-10-05%20212115.png)
 
 
 
